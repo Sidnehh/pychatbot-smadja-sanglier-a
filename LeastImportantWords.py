@@ -1,3 +1,7 @@
+from getTextFilesName import *
+from FinalScoreDict import *
+from IDF import *
+from TF import *
 def LeastImportantWords(folder):                        # Retourne une liste des mots les moins importants du corpus
                                                         # folder (ceux dont le score TF-IDF = 0)
     folder = folder+"/"

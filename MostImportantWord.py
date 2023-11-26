@@ -1,3 +1,7 @@
+from getTextFilesName import *
+from FinalScoreDict import *
+from IDF import *
+from TF import *
 def MostImportantWord(folder):
     folder = folder + "/"
 

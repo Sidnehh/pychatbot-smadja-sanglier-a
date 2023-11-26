@@ -1,3 +1,4 @@
+from getTextFilesName import *
 def presidentsSpeeches(presidents, folder):
     president_speeches = {}
     for president in presidents:

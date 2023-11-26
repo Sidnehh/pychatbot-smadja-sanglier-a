@@ -1,6 +1,8 @@
 import math
-from BaseFunctions import *
+from getTextFilesName import *
 import operator
+
+from TF import *
 
 def IDF(folder, extension='txt'):                           # Partie IDF :
                                                             # Retourne un dictionnaire associant chaque mot présent dans
