@@ -1,8 +1,9 @@
 def TF(file, folder=''):                                    # Partie TF :
     folder = folder + "/"                                   # Retourne un dictionnaire associant chaque mot d'un fichier
     words_count = {}                                        # à une fréquence d'apparition dans le texte du fichier.
-    with (open(folder+file,'r') as f):
+    with (open(folder+file,'rt', encoding = 'latin-1') as f):
         lines = f.readlines()
+
         for i in range(len(lines)):
             line = lines[i].split(" ")                      
             for word in line:

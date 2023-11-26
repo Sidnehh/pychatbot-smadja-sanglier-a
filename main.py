@@ -1,39 +1,24 @@
-from createFolder import *
-from extractNames import *
-from getTextFilesName import *
-from createCleanedFiles import *
-from presidentsSpeeches import *
+from menuHandler import TakeInput
+import time
 
-from TF import *
-from IDF import *
-from MostImportantWord import *
-from LeastImportantWords import *
+while True:
+    print("Veuillez choisir une action à réaliser :")
+    print(
+        "1. Afficher les mots les moins importants \n"
+        "2. Afficher le mot le plus important \n"
+        "3. Afficher le mot le plus répété \n"   
+        "4. Afficher les présidents qui ont parlé du mot que vous choisirez \n"
+        "5. Afficher le président qui a le plus parlé du mot que vous choisirez \n"
+        "6. Afficher quel président a dit en premier le mot que vous choisirez \n"
+        "7. Afficher les mots que tous les présidents ont dit \n"
+        "8. Arrêter le programme :("
+    )
 
-from removePunctuation import *
-from FinalScoreDict import *
-
-basefolder = "speeches"
-cleanfolder = "cleaned"
-
-presidents_surnames = extractNames(basefolder, "txt")
-print("Noms des présidents : ", presidents_surnames)
-
-presidents_names_lastname = []
-for name in presidents_surnames:
-    presidents_names_lastname.append((associateName(name), name))
-print("Noms et prénoms des présidents : ", presidents_names_lastname)
-
-presidents_speeches = presidentsSpeeches(presidents_surnames, basefolder)
-print("Correspondance présidents-discours : ", presidents_speeches)
-
-files = getTextFilesName(basefolder)
-
-createFolder(cleanfolder)
-createCleanedFiles(files, basefolder)
-removePunctuation(cleanfolder)
-
-print("Mots les moins importants : ", LeastImportantWords(cleanfolder)) # la valeur de séparation (0) peut être changée
-print("Mot le plus important : ", MostImportantWord(cleanfolder))
-
+    userinput = int(input("Saisissez votre choix : "))
+    if userinput == 8:
+        break
+    TakeInput(userinput)
+    time.sleep(2)
+print("Bye Bye, à la revoyure les coupains !")
 
 
