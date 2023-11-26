@@ -16,3 +16,6 @@ Le menu "" permet de :
 
 BUGS :
 Pour toutes les fonctions avec des saisies de mots, le programme renvoie des résultats érronés quand le mot comprend un  ou plusieurs caractères spécifiques propre à l'encodage UTF-8.
+
+INSTRUCTIONS :
+Exécuter le fichier "main.py" et suivre les indications du menu qui s'affichent.
