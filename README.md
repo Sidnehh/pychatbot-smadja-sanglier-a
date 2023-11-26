@@ -5,7 +5,6 @@ LIEN GIT :
 https://github.com/Sidnehh/pychatbot-smdja-sanglier-a-2-/
 
 FONCTIONNALITES :
-Le menu "" permet de :
 - Trouver le mot le plus répété du corpus "speeches"
 - Trouver le mot le plus pertinent/important du corpus "speeches"
 - Trouver le mot le moins pertinent/important du corpus "speeches"
