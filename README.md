@@ -15,4 +15,4 @@ Le menu "" permet de :
 - Trouver le président ayant le plus évoqué un mot choisi par l'utilisateur
 
 BUGS :
-Pour toutes les fonctions avec des saisies de mots, il y a des bugs quand le mot comprend un caractère spécial propre à l'encodage UTF-8.
+Pour toutes les fonctions avec des saisies de mots, le programme renvoie des résultats érronés quand le mot comprend un  ou plusieurs caractères spécifiques propre à l'encodage UTF-8.
