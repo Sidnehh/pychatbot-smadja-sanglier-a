@@ -1,10 +1,10 @@
 # pychatbot-smdja-sanglier-a-2-
 Projet L1S1 Python "ChatBot" - SMADJA ARTHUR - SANGLIER SIDNEY - GRP A
 
-Lien Git :
+LIEN GIT :
 https://github.com/Sidnehh/pychatbot-smdja-sanglier-a-2-/
 
-Fonctionnalités :
+FONCTIONNALITES :
 Le menu "" permet de :
 - Trouver le mot le plus répété du corpus "speeches"
 - Trouver le mot le plus pertinent/important du corpus "speeches"
