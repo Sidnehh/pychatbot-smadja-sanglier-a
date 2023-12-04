@@ -48,11 +48,11 @@ def TakeInput(user_input):
         case 4:
             word = input("Saisissez un mot à rechercher : ")
             files = getTextFilesName(cleanfolder)
-            presidents_who_talked = []
+            presidents_who_talked = set({})
             for file in files:
                 #print(TF(file, cleanfolder).keys())
                 if word in TF(file, cleanfolder).keys():
-                    presidents_who_talked.append(associateFilesToName(file))
+                    presidents_who_talked = {associateFilesToName(file)} | presidents_who_talked
             print("Les présidents qui ont parlé de", word, ": ", presidents_who_talked)
 
 
