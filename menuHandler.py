@@ -50,7 +50,7 @@ def TakeInput(user_input):
             files = getTextFilesName(cleanfolder)
             presidents_who_talked = []
             for file in files:
-                print(TF(file, cleanfolder).keys())
+                #print(TF(file, cleanfolder).keys())
                 if word in TF(file, cleanfolder).keys():
                     presidents_who_talked.append(associateFilesToName(file))
             print("Les présidents qui ont parlé de", word, ": ", presidents_who_talked)
@@ -85,7 +85,7 @@ def TakeInput(user_input):
                         president = associateFilesToName(file)
                         minval = presidentsMandates[associateFilesToName(file)][0]
 
-            print("Le président qui a dit le plus le mot '", word, "' en premier est", president)
+            print("Le président qui a dit le mot '", word, "' en premier est", president)
 
 
         case 7:

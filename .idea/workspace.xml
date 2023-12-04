@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/menuHandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDF.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TF.py" beforeDir="false" afterPath="$PROJECT_DIR$/TF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getTextFilesName.py" beforeDir="false" afterPath="$PROJECT_DIR$/getTextFilesName.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menuHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/menuHandler.py" afterDir="false" />
     </list>
-    <list id="46c94e8e-96ee-4fb8-b696-2d3e67e3098b" name="Changes by Sidney (Ingénieur)" comment="">
-      <change beforePath="$PROJECT_DIR$/IDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDF.py" afterDir="false" />
-    </list>
+    <list id="46c94e8e-96ee-4fb8-b696-2d3e67e3098b" name="Changes by Sidney (Ingénieur)" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,23 +27,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/IDF.py">
-      <ranges>
-        <range start1="13" end1="14" start2="13" end2="14" changelist="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" />
-        <range start1="17" end1="20" start2="17" end2="20" changelist="46c94e8e-96ee-4fb8-b696-2d3e67e3098b" />
-        <range start1="26" end1="27" start2="26" end2="27" changelist="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" />
-        <range start1="29" end1="30" start2="29" end2="30" changelist="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" />
-        <range start1="32" end1="32" start2="32" end2="57" changelist="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2YideLvoBhjTNZFWK73ROwBcFqh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,6 +42,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "menu__testing",
     "last_opened_file_path": "C:/Scolarité Efrei/L1/S1/Algorithmique et programmation python/Programmation python/Python Project Git Repos 2"
   }
