@@ -22,7 +22,7 @@ def TF(file, folder=''):                                    # Partie TF :
         lines = f.readlines()
 
         for i in range(len(lines)):
-            line = lines[i].split(" ")
+            line = lines[i].replace('\n', '').split(" ")
             for word in line:
                 if word != '\n':
                     if word not in words_count.keys():

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" name="Changes" comment="" />
+    <list default="true" id="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TF.py" beforeDir="false" afterPath="$PROJECT_DIR$/TF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TFIDFMAT.py" beforeDir="false" afterPath="$PROJECT_DIR$/TFIDFMAT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menuHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/menuHandler.py" afterDir="false" />
+    </list>
     <list id="46c94e8e-96ee-4fb8-b696-2d3e67e3098b" name="Changes by Sidney (Ingénieur)" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "menu__testing",
+    "git-widget-placeholder": "matrice__tfidf",
     "last_opened_file_path": "C:/Scolarité Efrei/L1/S1/Algorithmique et programmation python/Programmation python/Python Project Git Repos 2"
   }
 }]]></component>

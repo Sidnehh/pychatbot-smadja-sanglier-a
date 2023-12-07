@@ -11,11 +11,12 @@ while True:
         "5. Afficher le président qui a le plus parlé du mot que vous choisirez \n"
         "6. Afficher quel président a dit en premier le mot que vous choisirez \n"
         "7. Afficher les mots que tous les présidents ont dit \n"
-        "8. Arrêter le programme :("
+        "8. Afficher la matrice TFIDF \n"
+        "9. Arrêter le programme :("
     )
 
     userinput = int(input("Saisissez votre choix : "))
-    if userinput == 8:
+    if userinput == 9:
         break
     TakeInput(userinput)
     time.sleep(2)

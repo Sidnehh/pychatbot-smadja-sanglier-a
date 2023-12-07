@@ -12,6 +12,7 @@ from LeastImportantWords import *
 from removePunctuation import *
 from FinalScoreDict import *
 
+from TFIDFMAT import generate_TFIDF_matrix
 least_important = 1
 most_important = 2
 most_repeated = 3
@@ -98,3 +99,5 @@ def TakeInput(user_input):
                 filteredwords &= tfwords
             filteredwords = list(filteredwords)
             print("Les mots que tous les présidents ont dits sont ", filteredwords)
+        case 8:
+            print(generate_TFIDF_matrix(folder))
