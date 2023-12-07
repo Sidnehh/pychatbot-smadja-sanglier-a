@@ -27,7 +27,7 @@ def IDF(folder, extension='txt'):                           # Partie IDF :
         for key in tfs[file].keys():                      # cela permet de savoir dans combien de fichiers est contenu un mot
             allwords[key]+=1
     for key in allwords.keys():                             # on effectue l'opération idf pour chaque mot
-        allwords[key] = math.log((len(tfs)/(allwords[key])), 10.0)
+        allwords[key] = math.log((float(len(tfs))/(float(allwords[key]))), 10.0)
     return allwords
 
 def MostRepeatedWord(folder, extension='txt'): # trouve le mot le plus répété du dossier
