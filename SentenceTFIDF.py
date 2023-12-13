@@ -18,19 +18,15 @@ def IntersectingWords(words):
 
     return [word for word in words if word in idf_set]
 def OrderedSet(lst):
-    lst_set = set(lst)
-    ordered_set = []
-    for elt in lst:
-        if elt not in ordered_set:
-            ordered_set.append(elt)
-    return ordered_set
+    lst_set = sorted(list(set(lst)))
+    return lst_set
 def SentenceTFIDF(sentence):
     sentence = CleanSentence(sentence)
     sentence_set = OrderedSet(sentence)
     tfs = []
     idf_dict = IDF.IDF(folder)
     for word in sorted(idf_dict.keys()):
-        if word in sentence:
+        if word in sentence_set:
             tfs.append((sentence.count(word)/len(sentence))*idf_dict[word])
         else:
             tfs.append(0)
@@ -39,4 +35,5 @@ def SentenceTFIDF(sentence):
 
 
 print(IntersectingWords(CleanSentence("Faire partie de la république de blitz")))
+print(SentenceTFIDF("Faire partie de la république de blitz")[0])
 print(SentenceTFIDF("Faire partie de la république de blitz")[1])
