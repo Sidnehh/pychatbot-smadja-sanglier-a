@@ -8,7 +8,7 @@ def getTextFilesName(folder, extension="txt"):  # Retourne une liste des noms de
     for filename in os.listdir(folder):
         if filename.endswith(extension):
             files_name.append(filename)
-    return files_name
+    return sorted(files_name)
 
 def associateName(lastname):            # Associe un prénom à un nom de président.
     return presidentsNames[lastname]
