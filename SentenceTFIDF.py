@@ -3,7 +3,7 @@ import IDF
 folder = "cleaned"
 
 
-def CleanSentence(sentence, characters_to_erase=[',', '?', '!', '.']):
+def CleanSentence(sentence, characters_to_erase=[',', '?', '!', '.', ':', "'"]):
     sentence = sentence.lower()
 
     for char in characters_to_erase:
@@ -12,11 +12,11 @@ def CleanSentence(sentence, characters_to_erase=[',', '?', '!', '.']):
     return [j for i, j in enumerate(sentence.split(" ")) if j != ""]
 
 
-def IntersectingWords(words):
+def IntersectingWords(words):                           #Renvoie une liste des mots qui sont à la fois dans la liste word, et dans la matrice TFIDF
     words = OrderedSet(words)
     idf_set = IDF.IDF(folder).keys()
-
     return [word for word in words if word in idf_set]
+
 def OrderedSet(lst):
     lst_set = set(lst)
     ordered_set = []
@@ -37,6 +37,4 @@ def SentenceTFIDF(sentence):
     return [sorted(idf_dict.keys()), tfs]
 
 
-
-print(IntersectingWords(CleanSentence("Faire partie de la république de blitz")))
-print(SentenceTFIDF("Faire partie de la république de blitz")[1])
+print(SentenceTFIDF("Coucou ça va ? Je vais bien et toi bisous."))

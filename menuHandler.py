@@ -99,5 +99,6 @@ def TakeInput(user_input):
                 filteredwords &= tfwords
             filteredwords = list(filteredwords)
             print("Les mots que tous les présidents ont dits sont ", filteredwords)
+
         case 8:
-            print(PrintCleanMatrix(generate_TFIDF_matrix(folder)))
+            PrintCleanMatrix(generate_TFIDF_matrix(folder))

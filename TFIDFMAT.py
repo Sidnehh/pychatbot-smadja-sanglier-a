@@ -1,4 +1,4 @@
-IMPORTS_AUTHORIZED = True
+IMPORTS_AUTHORIZED = False
 
 from LeastImportantWords import *
 
@@ -36,7 +36,8 @@ def PrintCleanMatrix(matrix):
         numpy.set_printoptions(threshold=sys.maxsize)
         print(numpy.array(matrix))
     else:
-        print(matrix)
+        for line in matrix:
+            print(line)
 
 if __name__ == '__main__':
 

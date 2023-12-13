@@ -19,7 +19,7 @@ while True:
     if userinput == 9:
         break
     TakeInput(userinput)
-    time.sleep(2)
+    time.sleep(5)
 print("Bye Bye, à la revoyure les coupains !")
 
 
