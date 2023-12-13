@@ -1,15 +1,18 @@
 import IDF
+from Vanillafunctions import Lower
+from Vanillafunctions import Sort
 
 folder = "cleaned"
 
 
-def CleanSentence(sentence, characters_to_erase=[',', '?', '!', '.', ':', "'"]):
-    sentence = sentence.lower()
+def CleanSentence(sentence, characters_to_erase=[',', '?', '!', '.', ':', "'"]): #Convertit une phrase sentence en liste de mots sans ponctuation.
+    sentence = Lower(sentence)
 
     for char in characters_to_erase:
         sentence = sentence.split(char)
         sentence = " ".join(sentence)
-    return [j for i, j in enumerate(sentence.split(" ")) if j != ""]
+    sentence = sentence.split(" ")
+    return [sentence[j] for j in range(len(sentence)) if sentence[j] != ""]
 
 
 def IntersectingWords(words):                           #Renvoie une liste des mots qui sont à la fois dans la liste word, et dans la matrice TFIDF
@@ -17,16 +20,12 @@ def IntersectingWords(words):                           #Renvoie une liste des m
     idf_set = IDF.IDF(folder).keys()
     return [word for word in words if word in idf_set]
 
-def OrderedSet(lst):
-    lst_set = set(lst)
-    ordered_set = []
-    for elt in lst:
-        if elt not in ordered_set:
-            ordered_set.append(elt)
-    return ordered_set
+def OrderedSet(lst):        #Renvoie un set ordonné d'une liste lst
+    lst_set = Sort(list(set(lst)))
+    return lst_set
 def SentenceTFIDF(sentence):
     sentence = CleanSentence(sentence)
-    sentence_set = OrderedSet(sentence)
+    sentence_set = set(sentence)
     tfs = []
     idf_dict = IDF.IDF(folder)
     for word in sorted(idf_dict.keys()):
@@ -37,4 +36,4 @@ def SentenceTFIDF(sentence):
     return [sorted(idf_dict.keys()), tfs]
 
 
-print(SentenceTFIDF("Coucou ça va ? Je vais bien et toi bisous."))
+print(CleanSentence("Coucou, je m'appelle Sidney."))

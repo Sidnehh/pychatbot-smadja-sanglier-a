@@ -1,5 +1,6 @@
 import math
 from getTextFilesName import *
+from Vanillafunctions import *
 import operator
 
 from TF import *
@@ -51,12 +52,12 @@ def MostRepeatedWord(folder, extension='txt'): # trouve le mot le plus répété
 
     for file in range(len(files)):
         for key in tfs[file].keys():
-            allwords[key]+=tfs[file][key] * sum(tfs[file].values())
+            allwords[key]+=tfs[file][key] * Sum(tfs[file].values())
 
     return max(allwords, key=allwords.get)
 
 def GetOrderedIDF(folder, extension='txt'):
     idf = IDF(folder)
-    return idf, sorted(idf.keys())
+    return idf, Sort(idf.keys())
 
 
