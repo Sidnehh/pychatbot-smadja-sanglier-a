@@ -15,7 +15,7 @@ def MostImportantWord(folder):
     idf_dict = IDF(folder)
     for file in files:
         tf_dict = TF(file, folder)
-        for word in tf_dict.keys():
+        for word in sorted(tf_dict.keys()):
             word = str(word)
             if FinalScoreDict(idf_dict, tf_dict, word) > FinalScoreDict(idf_dict, tf_dict, max_word):
                 max_word = word

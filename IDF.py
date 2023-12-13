@@ -54,3 +54,9 @@ def MostRepeatedWord(folder, extension='txt'): # trouve le mot le plus répété
             allwords[key]+=tfs[file][key] * sum(tfs[file].values())
 
     return max(allwords, key=allwords.get)
+
+def GetOrderedIDF(folder, extension='txt'):
+    idf = IDF(folder)
+    return idf, sorted(idf.keys())
+
+

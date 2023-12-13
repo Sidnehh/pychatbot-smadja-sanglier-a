@@ -30,6 +30,14 @@ def generate_TFIDF_matrix(folder):
 
     return TransposeMatrix(return_matrix)
 
+def PrintCleanMatrix(matrix):
+    if IMPORTS_AUTHORIZED:
+        import sys
+        numpy.set_printoptions(threshold=sys.maxsize)
+        print(numpy.array(matrix))
+    else:
+        print(matrix)
+
 if __name__ == '__main__':
 
     folder = "cleaned"
