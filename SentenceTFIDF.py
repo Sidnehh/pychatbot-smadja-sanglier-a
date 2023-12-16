@@ -17,10 +17,12 @@ def IntersectingWords(words):
     idf_set = IDF.IDF(folder).keys()
 
     return [word for word in words if word in idf_set]
+
 def OrderedSet(lst):
     lst_set = sorted(list(set(lst)))
     return lst_set
-def SentenceTFIDF(sentence):
+
+def SentenceTFIDF(sentence):                                                #Retourne l'ensemble des mots du corpus et la matrice TFIDF de la phrase sentence
     sentence = CleanSentence(sentence)
     sentence_set = OrderedSet(sentence)
     tfs = []
@@ -31,9 +33,3 @@ def SentenceTFIDF(sentence):
         else:
             tfs.append(0)
     return [sorted(idf_dict.keys()), tfs]
-
-
-
-print(IntersectingWords(CleanSentence("Faire partie de la république de blitz")))
-print(SentenceTFIDF("Faire partie de la république de blitz")[0])
-print(SentenceTFIDF("Faire partie de la république de blitz")[1])

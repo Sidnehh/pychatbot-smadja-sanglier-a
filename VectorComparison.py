@@ -2,8 +2,8 @@ import math
 
 from SentenceTFIDF import SentenceTFIDF
 from TFIDFMAT import generate_TFIDF_matrix, TransposeMatrix
-
 from getTextFilesName import getTextFilesName
+
 def VectorsCosine(vec1, vec2):
     sum = 0
     if len(vec1)<len(vec2):
@@ -27,13 +27,11 @@ def VectorsCosine(vec1, vec2):
 def DocumentWithMostSimilarity(sentence, folder):
     sentence = SentenceTFIDF(sentence)
     tfidf_matrix = TransposeMatrix(generate_TFIDF_matrix(folder))
-    print(tfidf_matrix[1:])
 
     highest_similarity = 0
     files = getTextFilesName(folder)
     wantedfile = 0
     file_id = 0
-
 
     for file in tfidf_matrix[1:]:
         if VectorsCosine(sentence[1], file)>highest_similarity:
@@ -41,5 +39,3 @@ def DocumentWithMostSimilarity(sentence, folder):
             wantedfile = file_id
         file_id+=1
     return files[wantedfile]
-
-print(DocumentWithMostSimilarity("Bonjour mes chers con citoyens", "cleaned"))
