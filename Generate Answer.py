@@ -5,6 +5,7 @@ import VanillaFunctions as v
 from IDF import *
 
 endingpunctuation = ['.', '!', '-']
+question_starters = {'comment':'Après analyse, ' , 'pourquoi':'Car ', 'peux-tu': 'Oui, bien sûr ! ', 'quels': 'Ceux-ci : ', 'quel':"Il s'agit de, "}
 
 def MaxTFIDFQuestion(question):
     question_TFIDF = SentenceTFIDF(question)
@@ -53,16 +54,22 @@ def FirstOccurenceSentence(word, file):
     sentence = ""
     for i in range(idstart, idend):
         sentence += file_words[i] + ' '
-    return sentence
+    if sentence[-1] != '.':
+        sentence = sentence[:-1]+'.'
+
+    return v.Lower(sentence)
 
 def AnswerGenerator(question, folder="speeches"):
+    if question == "":
+        return "Veuillez saisir une question. "
     relevantword = MaxTFIDFQuestion(question)
-    print(relevantword, DocumentWithMostSimilarity(question, folder))
+    idquest = CleanSentence(question)[0]
     if relevantword == "":
         return "Pas d'information à ce sujet."
-    return FirstOccurenceSentence(relevantword,DocumentWithMostSimilarity(question, folder))
-
-print(AnswerGenerator("Comment se préparer à la guerre ?"))
+    answer = FirstOccurenceSentence(relevantword,DocumentWithMostSimilarity(question, folder))
+    if idquest in question_starters.keys():
+        answer = question_starters[idquest]+answer
+    return answer
 
 
 
