@@ -3,7 +3,7 @@ from extractNames import *
 from getTextFilesName import *
 from createCleanedFiles import *
 from presidentsSpeeches import *
-
+from GenerateAnswer import *
 from TF import *
 from IDF import *
 from MostImportantWord import *
@@ -90,7 +90,6 @@ def TakeInput(user_input):
 
 
         case 7:
-            words = []
             filteredwords = set(IDF(folder).keys())
             files = getTextFilesName(folder)
             for file in files:
@@ -99,5 +98,10 @@ def TakeInput(user_input):
                 filteredwords &= tfwords
             filteredwords = list(filteredwords)
             print("Les mots que tous les présidents ont dits sont ", filteredwords)
+
         case 8:
             print(PrintCleanMatrix(generate_TFIDF_matrix(folder)))
+
+        case 9:
+            question = input("Bonjour, comment puis-je vous aider ? \n")
+            print(AnswerGenerator(question))
