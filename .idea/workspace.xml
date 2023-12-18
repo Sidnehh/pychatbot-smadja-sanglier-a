@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" name="Changes" comment="asnwer generation works and doesn't need sorted function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnswerGeneration.py" beforeDir="false" />
-    </list>
+    <list default="true" id="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" name="Changes" comment="asnwer generation works and doesn't need sorted function" />
     <list id="46c94e8e-96ee-4fb8-b696-2d3e67e3098b" name="Changes by Sidney (Ingénieur)" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702893867520</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="asnwer generation works and doesn't need sorted function">
+      <option name="closed" value="true" />
+      <created>1702937121360</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702937121360</updated>
+    </task>
+    <task id="LOCAL-00006" summary="asnwer generation works and doesn't need sorted function">
+      <option name="closed" value="true" />
+      <created>1702937283937</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702937283937</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
