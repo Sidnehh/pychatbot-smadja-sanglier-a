@@ -4,7 +4,7 @@ import VanillaFunctions as Vanilla
 folder = "cleaned"
 
 
-def CleanSentence(sentence, characters_to_erase=[',', '?', '!', '.']):
+def CleanSentence(sentence, characters_to_erase=[',', '?', '!', '.', '-']):
     sentence = Vanilla.Lower(sentence)
 
     for char in characters_to_erase:
