@@ -12,9 +12,6 @@ FONCTIONNALITES :
 - Donner la liste des présidents ayant évoqué un mot choisi par l'utilisateur
 - Trouver le président ayant évoqué un mot choisi par l'utilisateur en premier
 - Trouver le président ayant le plus évoqué un mot choisi par l'utilisateur
-
-BUGS :
-Pour toutes les fonctions avec des saisies de mots, le programme peut renvoyer des résultats érronés quand le mot comprend un  ou plusieurs caractères spécifiques propre à l'encodage UTF-8.
-
+- Accéder au ChatBot interactif
 INSTRUCTIONS :
 Exécuter le fichier "main.py" et suivre les indications du menu qui s'affichent.
