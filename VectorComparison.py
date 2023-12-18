@@ -24,18 +24,42 @@ def VectorsCosine(vec1, vec2):
 
     return sum/(s1+s2)
 
+def DictsCosine(vec1, vec2):
+    sum = 0
+    if len(vec1)!=len(vec2):
+        return "Abort : cannot compute cosine of dictionaries with different sizes"
+    if set(vec1.keys()) != set(vec2.keys()):
+        return "Abort : cannot compute cosine of dictionaries with different keys"
+
+    for word in vec1.keys():
+        sum+=vec1[word]*vec2[word]
+    s1 = 0
+    s2 = 0
+    for word in vec1.keys():
+        s1 += vec1[word]**2
+        s2 += vec2[word]**2
+    s1 = math.sqrt(s1)
+    s2 = math.sqrt(s2)
+
+    return sum/(s1+s2)
+
 def DocumentWithMostSimilarity(sentence, folder):
-    sentence = SentenceTFIDF(sentence)
-    tfidf_matrix = TransposeMatrix(generate_TFIDF_matrix(folder))
+    sentencetfidf = SentenceTFIDF(sentence)
+    tfidf_matrix = generate_TFIDF_matrix(folder)
+    words = tfidf_matrix[1]
+    tfidf_matrix = TransposeMatrix(tfidf_matrix)
 
     highest_similarity = 0
     files = getTextFilesName(folder)
     wantedfile = 0
     file_id = 0
 
-    for file in tfidf_matrix[1:]:
-        if VectorsCosine(sentence[1], file)>highest_similarity:
-            highest_similarity = VectorsCosine(sentence[1], file)
+    for file in tfidf_matrix:
+        file = file[2:]
+        filedict = {words[word]:file[word] for word in range(len(words))}
+        value = DictsCosine(sentencetfidf, filedict)
+        if value>highest_similarity:
+            highest_similarity = value
             wantedfile = file_id
         file_id+=1
     return files[wantedfile]

@@ -1,4 +1,5 @@
 IMPORTS_AUTHORIZED = False
+PREDEFINED_FUNCTIONS_AUTHORIZED = True
 
 from LeastImportantWords import *
 
@@ -15,20 +16,22 @@ def TransposeMatrix(mat1):
 def generate_TFIDF_matrix(folder):
     files = getTextFilesName(folder)
     idf_dict = IDF(folder)
-    nwords = len(idf_dict)
-    filescores = [associateFilesToName(file) for file in files]
 
-    return_matrix = [[0 for y in range(nwords)] for x in range(len(filescores)+1)]
-    for word in range(nwords):
-        return_matrix[0][word] = sorted(idf_dict.keys())[word]
-    for file_id, file in enumerate(files):
-        tf_dict = TF(file, folder)
-        for word_id, word in enumerate(sorted(idf_dict.keys())):
-            return_matrix[file_id+1][word_id] = round(FinalScoreDict(idf_dict, tf_dict, word), 4)
+    return_matrix = [[0 for y in range(len(idf_dict))] for x in range(len(files))]
+
+    words = list(idf_dict.keys())
+
+    if PREDEFINED_FUNCTIONS_AUTHORIZED:
+        words = sorted(words)
+
+    for file_id in range(len(files)):
+        tf_dict = TF(files[file_id], folder)
+        for word_id in range(len(words)):
+            return_matrix[file_id][word_id] = round(FinalScoreDict(idf_dict, tf_dict, words[word_id]), 4)
 
 
 
-    return TransposeMatrix(return_matrix)
+    return [files, words]+TransposeMatrix(return_matrix)
 
 def PrintCleanMatrix(matrix):
     if IMPORTS_AUTHORIZED:
@@ -48,7 +51,10 @@ if __name__ == '__main__':
         numpy.set_printoptions(threshold=sys.maxsize)
         print(numpy.array(generate_TFIDF_matrix(folder)))
     else:
-        print(generate_TFIDF_matrix(folder))
+        mat = generate_TFIDF_matrix(folder)
+        for file in mat:
+            print(file)
+
 
 
 

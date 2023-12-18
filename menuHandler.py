@@ -104,4 +104,5 @@ def TakeInput(user_input):
 
         case 9:
             question = input("Bonjour, comment puis-je vous aider ? \n")
+            print()
             print(AnswerGenerator(question))

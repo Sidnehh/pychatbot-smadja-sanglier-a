@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" name="Changes" comment="">
+    <list default="true" id="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" name="Changes" comment="vanilla functions">
+      <change afterPath="$PROJECT_DIR$/AnswerGeneration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generate Answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/GenerateAnswer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentenceTFIDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/SentenceTFIDF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TF.py" beforeDir="false" afterPath="$PROJECT_DIR$/TF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TFIDFMAT.py" beforeDir="false" afterPath="$PROJECT_DIR$/TFIDFMAT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VanillaFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/VanillaFunctions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VectorComparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/VectorComparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaned/Nomination_Chirac2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cleaned/Nomination_Chirac2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menuHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/menuHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speeches/Nomination_Chirac2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/speeches/Nomination_Chirac2.txt" afterDir="false" />
     </list>
     <list id="46c94e8e-96ee-4fb8-b696-2d3e67e3098b" name="Changes by Sidney (Ingénieur)" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="matrice_tfidf" />
+        <entry key="$PROJECT_DIR$" value="vector_comparison" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,15 +50,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "vector__comparison",
-    "last_opened_file_path": "C:/Scolarité Efrei/L1/S1/Algorithmique et programmation python/Programmation python/Python Project Git Repos 2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;AnswerGeneration&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Scolarité Efrei/L1/S1/Algorithmique et programmation python/Programmation python/Python Project Git Repos 2&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,7 +76,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702488840994</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="vanilla functions">
+      <option name="closed" value="true" />
+      <created>1702491024239</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702491024239</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
