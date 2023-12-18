@@ -4,7 +4,7 @@ from SentenceTFIDF import SentenceTFIDF
 from TFIDFMAT import generate_TFIDF_matrix, TransposeMatrix
 from getTextFilesName import getTextFilesName
 
-def VectorsCosine(vec1, vec2):
+def VectorsCosine(vec1, vec2): #pas utile mais peut l'être si l'on change la façon dont la similarité est générée
     sum = 0
     if len(vec1)<len(vec2):
         vec1 += [0 for i in range(len(vec2)-len(vec1))]

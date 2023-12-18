@@ -7,8 +7,6 @@ def Sorted(liste): #bogo sort
         else:
             numbers_list.append(l)
 
-def Enumerate(liste):
-    pass
 def Lower(word):
     lower_word = ""
     for a in word:

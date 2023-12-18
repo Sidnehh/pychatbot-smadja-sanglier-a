@@ -13,13 +13,7 @@ from removePunctuation import *
 from FinalScoreDict import *
 
 from TFIDFMAT import generate_TFIDF_matrix, PrintCleanMatrix
-least_important = 1
-most_important = 2
-most_repeated = 3
-who_talked_about_word = 4
-who_repeated_it_the_most = 5
-who_said_it_first = 6
-they_all_said_it = 7
+
 
 basefolder = "speeches"
 cleanfolder = "cleaned"
