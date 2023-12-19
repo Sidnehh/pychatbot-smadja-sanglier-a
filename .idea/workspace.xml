@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" name="Changes" comment="asnwer generation works and doesn't need sorted function" />
+    <list default="true" id="6537728b-c8aa-4e55-b02c-52ee2bc2bd38" name="Changes" comment="everything is in english">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenerateAnswer.py" beforeDir="false" afterPath="$PROJECT_DIR$/GenerateAnswer.py" afterDir="false" />
+    </list>
     <list id="46c94e8e-96ee-4fb8-b696-2d3e67e3098b" name="Changes by Sidney (Ingénieur)" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Andromiel"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f1e92cc1-b61b-4206-ad30-466022078c33" />
+        <option name="url" value="https://github.com/Sidnehh/pychatbot-smdja-sanglier-a-2-.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -103,12 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702937283937</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="everything is in english">
+      <option name="closed" value="true" />
+      <created>1702937332725</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702937332725</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="vanilla functions" />
     <MESSAGE value="asnwer generation works and doesn't need sorted function" />
-    <option name="LAST_COMMIT_MESSAGE" value="asnwer generation works and doesn't need sorted function" />
+    <MESSAGE value="everything is in english" />
+    <option name="LAST_COMMIT_MESSAGE" value="everything is in english" />
   </component>
 </project>
